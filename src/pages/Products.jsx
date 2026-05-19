@@ -1,8 +1,15 @@
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 
 export default function Products() {
 
+    const [product, setProduct] = useState([])
 
+    fetch('https://fakestoreapi.com/products')
+        .then(rep => rep.json())
+        .then(data => {
+            setProduct(data)
+        })
 
     return (
         <>
@@ -23,6 +30,25 @@ export default function Products() {
 
                 </div>
             </section>
+            <div className="container">
+                <div className="row row-cols-1 row-cols-md-3 g-3">
+                    {
+                        product.map(article => (
+                            <div className="card" key={article.id}>
+                                <img src={article.image} alt="" className="p-3" />
+                                <div className="card-body">
+                                    <p><strong>Nome: </strong>{article.title}</p>
+                                    <p><strong>Descrizione: </strong>{article.description}</p>
+                                    <p><strong>Prezzo: </strong>{article.price}€</p>
+                                    <button className="btn btn-success">
+                                        Acquista <i class="bi bi-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
         </>
     )
 }
