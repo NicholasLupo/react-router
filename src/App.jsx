@@ -10,8 +10,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' Component={Homepage} />
-          <Route path='/' Component={Products} />
-          <Route path='/' Component={Presentation} />
+          <Route path='/homepage' Component={Homepage} />
+          <Route path='/products' Component={Products} />
+          <Route path='/company' Component={Presentation} />
         </Routes>
       </BrowserRouter>
     </>
