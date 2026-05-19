@@ -1,10 +1,12 @@
+import Navbar from "../components/Navbar";
+
 export default function Presentation() {
 
 
 
     return (
         <>
-            <h1>Presentation</h1>
+            <Navbar />
         </>
     )
 }
