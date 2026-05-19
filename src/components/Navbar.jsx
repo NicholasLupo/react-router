@@ -3,9 +3,9 @@ export default function Navbar() {
 
     return (
         <>
-            <section className="d-flex justify-content-around">
+            <section className="d-flex justify-content-between mx-5">
                 <nav className="navbar navbar-expand-md navbar-light">
-                    <a className="navbar-brand" href="/homepage">FakeStore</a>
+                    <a className="navbar-brand fs-1" href="/homepage">FakeStore</a>
                 </nav>
                 <nav className="navbar navbar-expand-md navbar-light ">
                     <button
@@ -19,7 +19,7 @@ export default function Navbar() {
                     >
                     </button>
                     <div className="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul className="navbar-nav me-auto mt-2 mt-lg-0">
+                        <ul className="navbar-nav me-auto mt-2 mt-lg-0 fs-5">
                             <li className="nav-item">
                                 <a className="nav-link active" href="/homepage" aria-current="page">
                                     Home
