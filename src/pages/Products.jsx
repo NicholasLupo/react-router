@@ -13,7 +13,6 @@ export default function Products() {
 
     return (
         <>
-            <Navbar />
             <section>
                 <div className="container">
                     <div className="p-5 mb-4 bg-light rounded-3">

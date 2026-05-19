@@ -23,7 +23,7 @@ export default function Navbar() {
                     <div className="collapse navbar-collapse" id="collapsibleNavId">
                         <ul className="navbar-nav me-auto mt-2 mt-lg-0 fs-5">
                             <li className="nav-item">
-                                <Link to='/homepage' className="nav-link active" aria-current="page">
+                                <Link to='/homepage' className="nav-link" aria-current="page">
                                     Home
                                 </Link>
                             </li>
