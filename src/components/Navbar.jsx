@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
 
 
@@ -5,7 +7,7 @@ export default function Navbar() {
         <>
             <section className="d-flex justify-content-between mx-5">
                 <nav className="navbar navbar-expand-md navbar-light">
-                    <a className="navbar-brand fs-1" href="/homepage">FakeStore</a>
+                    <Link to='/homepage' className="navbar-brand fs-1">FakeStore</Link>
                 </nav>
                 <nav className="navbar navbar-expand-md navbar-light ">
                     <button
@@ -21,15 +23,15 @@ export default function Navbar() {
                     <div className="collapse navbar-collapse" id="collapsibleNavId">
                         <ul className="navbar-nav me-auto mt-2 mt-lg-0 fs-5">
                             <li className="nav-item">
-                                <a className="nav-link active" href="/homepage" aria-current="page">
+                                <Link to='/homepage' className="nav-link active" aria-current="page">
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/products">Products</a>
+                                <Link to='/products' className="nav-link">Products</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/company">Company</a>
+                                <Link to='/company' className="nav-link">Company</Link>
                             </li>
                         </ul>
                     </div>
