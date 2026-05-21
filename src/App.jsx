@@ -17,6 +17,7 @@ function App() {
             <Route path='/product' Component={Products} />
             <Route path='/company' Component={Presentation} />
             <Route path='/products/:id' Component={ProductPage} />
+            <Route path="*" element={<h1>404 Not Found</h1>} />
           </Route>
         </Routes>
       </BrowserRouter>
