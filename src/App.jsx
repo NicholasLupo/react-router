@@ -14,9 +14,9 @@ function App() {
           <Route element={<DefaultLayout />}>
             <Route path='/' Component={Homepage} />
             <Route path='/homepage' Component={Homepage} />
-            <Route path='/products' Component={Products} />
+            <Route path='/product' Component={Products} />
             <Route path='/company' Component={Presentation} />
-            <Route path='/product' Component={ProductPage} />
+            <Route path='/products/:id' Component={ProductPage} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -40,7 +40,7 @@ export default function Products() {
                                     <p><strong>Nome: </strong>{article.title}</p>
                                     <p><strong>Descrizione: </strong>{article.description}</p>
                                     <p><strong>Prezzo: </strong>{article.price}€</p>
-                                    <Link to='/product' className="btn btn-success">
+                                    <Link to={`/products/${article.id}`} className="btn btn-success">
                                         Acquista <i class="bi bi-cart"></i>
                                     </Link>
                                 </div>

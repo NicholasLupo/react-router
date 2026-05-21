@@ -14,7 +14,7 @@ export default function Homepage() {
                             <p className="col fs-4">
                                 Vuoi comprare qualcosa ma allo stesso tempo non vuoi comprare qualcosa?
                             </p>
-                            <Link to='/products' className="col fs-2 btn btn-primary">
+                            <Link to='/product' className="col fs-2 btn btn-primary">
                                 <strong>Noi siamo la tua soluzione!!!</strong>
                             </Link>
                         </div>
