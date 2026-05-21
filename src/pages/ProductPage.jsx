@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 
 export default function ProductPage() {
 
     const { id } = useParams()
+    const navigate = useNavigate()
     const [product, setProduct] = useState({})
 
     useEffect(() => {
@@ -12,7 +13,10 @@ export default function ProductPage() {
             .then(data => {
                 setProduct(data)
             })
-    }, [])
+            .catch(err => {
+                navigate(-1)
+            })
+    }, [id, navigate])
 
     return (
         <>
