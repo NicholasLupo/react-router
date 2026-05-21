@@ -3,6 +3,7 @@ import Homepage from "./pages/Homepage"
 import Presentation from "./pages/Presentation"
 import Products from "./pages/Products"
 import DefaultLayout from "./layouts/DefaultLayout"
+import ProductPage from "./pages/ProductPage"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
             <Route path='/homepage' Component={Homepage} />
             <Route path='/products' Component={Products} />
             <Route path='/company' Component={Presentation} />
+            <Route path='/product' Component={ProductPage} />
           </Route>
         </Routes>
       </BrowserRouter>

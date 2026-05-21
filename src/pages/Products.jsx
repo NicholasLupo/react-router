@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 export default function Products() {
@@ -39,9 +40,9 @@ export default function Products() {
                                     <p><strong>Nome: </strong>{article.title}</p>
                                     <p><strong>Descrizione: </strong>{article.description}</p>
                                     <p><strong>Prezzo: </strong>{article.price}€</p>
-                                    <button className="btn btn-success">
+                                    <Link to='/product' className="btn btn-success">
                                         Acquista <i class="bi bi-cart"></i>
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         ))
