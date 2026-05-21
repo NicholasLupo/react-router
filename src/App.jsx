@@ -4,6 +4,7 @@ import Presentation from "./pages/Presentation"
 import Products from "./pages/Products"
 import DefaultLayout from "./layouts/DefaultLayout"
 import ProductPage from "./pages/ProductPage"
+import NotFoundPage from "./pages/NotFoundPage"
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
             <Route path='/product' Component={Products} />
             <Route path='/company' Component={Presentation} />
             <Route path='/products/:id' Component={ProductPage} />
-            <Route path="*" element={<h1>404 Not Found</h1>} />
+            <Route path="*" Component={NotFoundPage} />
           </Route>
         </Routes>
       </BrowserRouter>
