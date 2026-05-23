@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar({ BudgetButton }) {
 
 
     return (
@@ -9,7 +9,7 @@ export default function Navbar() {
                 <nav className="navbar navbar-expand-md navbar-light">
                     <Link to='/homepage' className="navbar-brand fs-1">FakeStore</Link>
                 </nav>
-                <nav className="navbar navbar-expand-md navbar-light ">
+                <nav className="navbar navbar-expand-md navbar-light">
                     <button
                         className="navbar-toggler d-lg-none"
                         type="button"
@@ -35,6 +35,9 @@ export default function Navbar() {
                             </li>
                         </ul>
                     </div>
+                    <button className="btn btn-success" onClick={BudgetButton}>
+                        Budget Mode
+                    </button>
                 </nav>
             </section>
         </>

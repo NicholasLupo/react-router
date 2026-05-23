@@ -24,7 +24,9 @@ export default function ProductPage() {
                 <div className="container">
                     <div className="p-5 mb-4 bg-light rounded-3">
                         <div className="container-fluid py-5">
-                            <img src={product.image} alt="" className="p-3" />
+                            <div className="text-center">
+                                <img src={product.image} alt="" className="p-3" />
+                            </div>
                             <p><strong>Nome: </strong>{product.title}</p>
                             <p><strong>Descrizione: </strong>{product.description}</p>
                             <p><strong>Prezzo: </strong>{product.price}€</p>

@@ -1,16 +1,7 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
-export default function Products() {
-
-    const [product, setProduct] = useState([])
-
-    fetch('https://fakestoreapi.com/products')
-        .then(rep => rep.json())
-        .then(data => {
-            setProduct(data)
-        })
+export default function Products({ product }) {
 
     return (
         <>
